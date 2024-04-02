@@ -2,8 +2,8 @@ name: Terraform Apply
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'terraforming-custom-vpc-githubactions/**'  # Trigger only when changes are pushed to this folder
 
 jobs:
   terraform:
